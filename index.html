@@ -1,37 +1,308 @@
-<!DOCTYPE html>                                                                                                         <html lang="tr">
-  <head>                                                                                                                    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GizlilikiPolitikasıc- HatimaGrubu</title>akibi amacıyla kullanılır. Verileriniz üçüncü taraflarla paylaşılmaz
-   v<style>ılmaz.</p>
-      body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
-    <hh1V{rcolor:n#0d2137;>}
-    <ph2e{icolor:z#1a3a5c;Fmargin-top:y30px;n}a güvenli biçimde saklanmaktadır.</p>
-    </style>
-  </head>letişim</h2>
-  <body>izlilik politikamızla ilgili sorularınız için bizimle iletişime geçebilirsiniz.</p>
-  </<h1>Gizlilik Politikası</h1>
-  </<p><strong>Son güncelleme:</strong> 28 Mart 2026</p>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gizlilik Politikası – Hatim Grubu</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-  3.<p>HatimPGrubuiuygulamasını kullandığınız için teşekkür ederiz. Bu gizlilik politikası, uygulamamızın kişisel
-  verilerinizitnasıl→işlediğini açıklamaktadır.</p>
-  - Source: "Deploy from a branch"
-  - <h2>Toplanan Veriler</h2>ave
-    <p>Uygulamamız aşağıdaki verileri toplar:</p>
-  4.<ul>'in hazır
-      <li>Kullanıcı adı (gruplarda görüntülenmek için)</li>
-  Birk<li>Hatim,sYasinUve'Salavatookumaailerlemeleri</li>
-  http<li>GrupAüyelikDbilgileri</li>atim-app-privacy
-    </ul>
-  Bu URL'i Play Console'daki gizlilik politikası alanına yapıştırırsın. GitHub kullanıcı adın ne?
-    <h2>Verilerin Kullanımı</h2>
-> de<p>Toplananeveriler yalnızca uygulama içi grup takibi amacıyla kullanılır. Verileriniz üçüncü taraflarla paylaşılmaz
-   veya satılmaz.</p>
-● GitHub kullanıcı adın ne, Play Store'da uygulama adı ne olacak?
-    <h2>Veri Güvenliği</h2>
-> Ha<p>VerilerinizkGoogleaFirebase altyapısında güvenli biçimde saklanmaktadır.</p>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: #f5f5f0;
+      color: #2c2c2c;
+      line-height: 1.75;
+      padding: 32px 16px 64px;
+    }
 
-● Pl<h2>İletişim</h2>ion (Türkçe):
-    <p>Gizlilik politikamızla ilgili sorularınız için bizimle iletişime geçebilirsiniz.</p>
-  </body>
-  </html>ıklama (80 karakter):
-  Hatim, Yasin ve Salavat gruplarını kolayca oluşturun ve takip edin.
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #1a5c38 0%, #2e7d52 100%);
+      padding: 40px 40px 32px;
+      color: #ffffff;
+    }
+
+    .header .app-name {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0.8;
+      margin-bottom: 8px;
+    }
+
+    .header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .header .updated {
+      font-size: 13px;
+      opacity: 0.7;
+    }
+
+    .content {
+      padding: 40px;
+    }
+
+    .intro {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 36px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid #ebebeb;
+    }
+
+    section {
+      margin-bottom: 36px;
+    }
+
+    section:last-of-type {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #1a5c38;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2 .icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      background: #e8f5ee;
+      border-radius: 8px;
+      font-size: 15px;
+      flex-shrink: 0;
+    }
+
+    p {
+      font-size: 14.5px;
+      color: #444;
+      margin-bottom: 10px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
+    }
+
+    ul li {
+      font-size: 14.5px;
+      color: #444;
+      padding: 6px 0 6px 20px;
+      position: relative;
+      border-bottom: 1px solid #f5f5f5;
+    }
+
+    ul li:last-child {
+      border-bottom: none;
+    }
+
+    ul li::before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      color: #2e7d52;
+      font-size: 12px;
+      top: 8px;
+    }
+
+    .highlight-box {
+      background: #f0faf4;
+      border-left: 3px solid #2e7d52;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 16px;
+      margin-top: 12px;
+    }
+
+    .highlight-box p {
+      margin: 0;
+      font-size: 14px;
+      color: #2e6644;
+    }
+
+    .contact-card {
+      background: #fafafa;
+      border: 1px solid #ebebeb;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 12px;
+    }
+
+    .contact-card p {
+      margin: 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .contact-card .dev-name {
+      font-size: 16px;
+      font-weight: 700;
+      color: #1a5c38;
+      margin-bottom: 4px;
+    }
+
+    .divider {
+      height: 1px;
+      background: #ebebeb;
+      margin: 28px 0;
+    }
+
+    .footer {
+      background: #f9f9f7;
+      border-top: 1px solid #ebebeb;
+      padding: 20px 40px;
+      text-align: center;
+      font-size: 12.5px;
+      color: #999;
+    }
+
+    @media (max-width: 600px) {
+      .header {
+        padding: 28px 24px 24px;
+      }
+      .content {
+        padding: 28px 24px;
+      }
+      .footer {
+        padding: 16px 24px;
+      }
+      .header h1 {
+        font-size: 23px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <div class="app-name">Hatim Grubu</div>
+      <h1>Gizlilik Politikası</h1>
+      <div class="updated">Son güncelleme: Mart 2026</div>
+    </div>
+
+    <div class="content">
+
+      <p class="intro">
+        Hatim Grubu uygulamasını kullandığınız için teşekkür ederiz. Bu gizlilik politikası, uygulamanın hangi verileri topladığını, bu verilerin nasıl kullanıldığını ve korunduğunu açıklamaktadır. Uygulamayı kullanarak bu politikayı kabul etmiş sayılırsınız.
+      </p>
+
+      <!-- 1. Toplanan Veriler -->
+      <section>
+        <h2><span class="icon">📋</span> Toplanan Veriler</h2>
+        <p>Uygulama yalnızca hizmetin işleyişi için gereken minimum düzeyde veri toplamaktadır:</p>
+        <ul>
+          <li>Ad (kullanıcının girdiği isim)</li>
+          <li>Okunmuş Kuran cüzleri (hangi cüzlerin okunduğu bilgisi)</li>
+          <li>Grup üyeliği ve grup içi ilerleme bilgisi</li>
+          <li>Yasin okuma sayısı</li>
+          <li>Salavat okuma sayısı</li>
+        </ul>
+        <div class="highlight-box">
+          <p>Uygulama; e-posta adresi, telefon numarası, konum bilgisi veya herhangi bir kimlik doğrulama verisi <strong>toplamamaktadır</strong>.</p>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <!-- 2. Verilerin Kullanımı -->
+      <section>
+        <h2><span class="icon">🎯</span> Verilerin Kullanımı</h2>
+        <p>Toplanan veriler yalnızca aşağıdaki amaçlarla kullanılmaktadır:</p>
+        <ul>
+          <li>Grup içi hatim takibinin sağlanması</li>
+          <li>Yasin ve salavat sayımlarının kaydedilmesi</li>
+          <li>Grup üyelerinin okuma ilerlemelerinin görüntülenmesi</li>
+          <li>Uygulamanın temel işlevlerinin yerine getirilmesi</li>
+        </ul>
+        <p style="margin-top: 12px;">Verileriniz hiçbir şekilde üçüncü taraflarla pazarlama veya reklam amacıyla paylaşılmamaktadır.</p>
+      </section>
+
+      <div class="divider"></div>
+
+      <!-- 3. Veri Güvenliği -->
+      <section>
+        <h2><span class="icon">🔒</span> Veri Güvenliği</h2>
+        <p>Tüm veriler, Google Firebase altyapısı üzerinde güvenli biçimde depolanmaktadır. Firebase; veri iletimini SSL/TLS şifrelemesiyle korumakta, güvenlik kurallarıyla yetkisiz erişimi engellemektedir.</p>
+        <p>Verileriniz yalnızca aynı gruba üye kullanıcılarla paylaşılmakta, grup dışındaki kişilerce erişilememektedir.</p>
+      </section>
+
+      <div class="divider"></div>
+
+      <!-- 4. Üçüncü Taraf Hizmetler -->
+      <section>
+        <h2><span class="icon">☁️</span> Üçüncü Taraf Hizmetler (Firebase)</h2>
+        <p>Uygulama, Google tarafından sağlanan <strong>Firebase Firestore</strong> hizmetini veritabanı olarak kullanmaktadır. Firebase'in gizlilik politikasına aşağıdaki bağlantıdan ulaşabilirsiniz:</p>
+        <p>
+          <a href="https://firebase.google.com/support/privacy" target="_blank" style="color: #1a5c38; font-size: 14px;">
+            firebase.google.com/support/privacy
+          </a>
+        </p>
+        <p>Firebase dışında herhangi bir üçüncü taraf analitik, reklam veya izleme hizmeti kullanılmamaktadır.</p>
+      </section>
+
+      <div class="divider"></div>
+
+      <!-- 5. İletişim -->
+      <section>
+        <h2><span class="icon">✉️</span> İletişim</h2>
+        <p>Gizlilik politikasına ilişkin soru veya talepleriniz için aşağıdaki geliştirici ile iletişime geçebilirsiniz:</p>
+        <div class="contact-card">
+          <p class="dev-name">Emirhan</p>
+          <p>Hatim Grubu – Uygulama Geliştiricisi</p>
+        </div>
+      </section>
+
+    </div>
+
+      <div class="divider"></div>
+
+      <!-- 6. Veri Silme -->
+      <section id="veri-silme">
+        <h2><span class="icon">🗑️</span> Veri Silme Talebi</h2>
+        <p>Uygulamada kayıtlı verilerinizin (ad, okuma ilerlemeleri, grup üyeliği) silinmesini talep etmek için aşağıdaki e-posta adresine yazabilirsiniz:</p>
+        <div class="contact-card">
+          <p class="dev-name">emirhan986@gmail.com</p>
+          <p>Talebiniz en geç 7 gün içinde işleme alınacaktır.</p>
+        </div>
+      </section>
+
+    </div>
+
+    <div class="footer">
+      &copy; 2026 Hatim Grubu &nbsp;·&nbsp; Tüm hakları saklıdır.
+    </div>
+
+  </div>
+
+</body>
+</html>
+
